@@ -1,0 +1,210 @@
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// Layout & components
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+
+// Helpers
+@import "helpers";
+
+// Utilities
+@import "utilities/api";
+// scss-docs-end import-stack
+body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background-color: $gray-300;
+
+    .navbar-brand span {
+        font-size: 30px;
+        font-weight: 700;
+        color: $orange;
+    }
+
+    .navbar {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hero {
+    min-height: 500px;
+    width: 100%;
+    background-color: $gray-300;
+    position: relative;
+}
+
+.text-hero {
+    font-size: 18px;
+    color: $gray-700;
+    line-height: 30px;
+}
+
+.btn-shop {
+    width: 170px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.icons-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        i {
+            margin-right: 10px;
+            color: $primary;
+        }
+
+        h6 {
+            font-size: 15px;
+            color: $black;
+
+            span {
+                font-size: 12px;
+                color: $gray-600;
+            }
+        }
+    }
+}
+
+.hero-img img {
+    height: 563px;
+}
+
+.item-special {
+    position: relative;
+    height: 276px;
+
+    .card {
+        background-color: $gray-300;
+        border-radius: 15px;
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .img-special {
+        position: relative;
+        bottom: 0;
+    }
+
+    .desc-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .name-star {
+            p.name-product {
+                font-size: 18px;
+                font-weight: 500;
+                color: $black;
+            }
+        }
+
+        .disc-price {
+            .disc {
+                font-size: 13px;
+                color: $orange;
+            }
+
+            .price {
+                font-size: 16px;
+                color: $gray-600;
+            }
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid $gray-300;
+    padding-top: 50px;
+    margin-top: 200px;
+
+    span.brand {
+        font-size: 26px;
+        font-weight: 700;
+        color: $orange;
+    }
+
+    .brand-tagline {
+        margin-top: 8px;
+        color: $gray-600;
+        font-weight: 300;
+    }
+
+    .list-group-item {
+        padding: 0.3125rem 0;
+        border: 0;
+        background-color: transparent;
+        color: $gray-600;
+        font-weight: 300;
+        cursor: pointer;
+
+
+        @mixin hover-focus {
+            color: $primary;
+
+        }
+    }
+
+    .copyrights {
+        margin: 50px 0;
+        font-weight: 300;
+        color: $gray-600;
+    }
+}

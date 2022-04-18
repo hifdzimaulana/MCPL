@@ -10,6 +10,6 @@ const router = require('./router')
 app.use('/', router)
 
 require('dotenv').config()
-app.listen(process.env.APP_PORT, () => {
-    console.log(`listening on http://localhost:${process.env.APP_PORT}`)
+app.listen(process.env.PORT || 1337, () => {
+    console.log(`listening on http://localhost:${process.env.PORT}`)
 })

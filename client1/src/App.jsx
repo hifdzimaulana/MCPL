@@ -2,8 +2,12 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 // Root
-import Home from './pages/Home'
-import About from './pages/About'
+import Home from './pages/home'
+import About from './pages/about'
+import Catalogue from './pages/catalogue'
+
+// Customer
+import LoginCustomer from './pages/customer/LoginCustomer'
 
 function App() {
   return (
@@ -11,6 +15,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/catalogue' element={<Catalogue />} />
+
+        {/* Customer */}
+        <Route path='/login' element={<LoginCustomer />} />
       </Routes>
     </div>
   )

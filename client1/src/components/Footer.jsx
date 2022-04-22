@@ -40,15 +40,9 @@ export default function Footer() {
 
                         {/* <!-- nav - start --> */}
                         <div>
-                            <div className="text-gray-800 font-bold tracking-widest uppercase mb-4">Products</div>
-
                             <nav className="flex flex-col gap-4">
                                 <div>
                                     <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Overview</a>
-                                </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Solutions</a>
                                 </div>
 
                                 <div>
@@ -56,44 +50,14 @@ export default function Footer() {
                                 </div>
 
                                 <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Customers</a>
-                                </div>
-                            </nav>
-                        </div>
-                        {/* <!-- nav - end --> */}
-
-                        {/* <!-- nav - start --> */}
-                        <div>
-                            <div className="text-gray-800 font-bold tracking-widest uppercase mb-4">Company</div>
-
-                            <nav className="flex flex-col gap-4">
-                                <div>
                                     <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">About</a>
                                 </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Investor Relations</a>
-                                </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Jobs</a>
-                                </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Press</a>
-                                </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Blog</a>
-                                </div>
                             </nav>
                         </div>
                         {/* <!-- nav - end --> */}
 
                         {/* <!-- nav - start --> */}
                         <div>
-                            <div className="text-gray-800 font-bold tracking-widest uppercase mb-4">Support</div>
-
                             <nav className="flex flex-col gap-4">
                                 <div>
                                     <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Contact</a>
@@ -101,10 +65,6 @@ export default function Footer() {
 
                                 <div>
                                     <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Documentation</a>
-                                </div>
-
-                                <div>
-                                    <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Chat</a>
                                 </div>
 
                                 <div>
@@ -116,8 +76,6 @@ export default function Footer() {
 
                         {/* <!-- nav - start --> */}
                         <div>
-                            <div className="text-gray-800 font-bold tracking-widest uppercase mb-4">Legal</div>
-
                             <nav className="flex flex-col gap-4">
                                 <div>
                                     <a href="#" className="text-gray-500 hover:text-indigo-500 active:text-indigo-600 transition duration-100">Terms of Service</a>

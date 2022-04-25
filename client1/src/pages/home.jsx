@@ -4,22 +4,6 @@ import { Footer, Navbar } from '../components'
 
 
 class Home extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            token: "",
-            adminName: null,
-            productsCount: 0,
-            customersCount: 0,
-            transactionsCount: 0,
-            adminsCount: 0
-        }
-        if (localStorage.getItem("token")) {
-            this.state.token = localStorage.getItem("token")
-        } else {
-            window.location = "/login"
-        }
-    }
 
     render() {
         return (

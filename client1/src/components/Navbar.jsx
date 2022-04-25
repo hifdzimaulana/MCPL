@@ -19,7 +19,7 @@ export default function Navbar() {
     }
 
     const links = [
-        { path: '/home', name: 'Home' },
+        { path: '/', name: 'Home' },
         { path: '/about', name: 'About' },
         { path: '/catalogue', name: 'Catalogue' },
         { path: '/shop', name: 'Shop' },

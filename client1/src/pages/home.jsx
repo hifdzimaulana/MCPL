@@ -2,6 +2,9 @@ import React from 'react'
 
 import { Footer, Navbar } from '../components'
 
+
+
+
 function Home() {
     return (
         <>

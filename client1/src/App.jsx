@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'
 
 // Root
 import Home from './pages/home'
@@ -11,7 +11,9 @@ import LoginCustomer from './pages/customer/LoginCustomer'
 
 function App() {
   return (
+    
     <div>
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

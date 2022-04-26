@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import axios from 'axios'
 import { Link, NavLink } from 'react-router-dom'
 import { Footer, Navbar } from '../components'

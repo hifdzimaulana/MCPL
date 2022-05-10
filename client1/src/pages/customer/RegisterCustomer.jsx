@@ -1,17 +1,15 @@
 import React from 'react'
-import { NavLink, Routes, Route } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-import RegisterCustomer from './RegisterCustomer';
 
-function LoginCustomer() {
+
+function RegisterCustomer() {
     return (
         <>
-
-
             <div className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="max-w-screen-2xl px-4 md:px-8 mx-auto">
                     <h2 className="text-green-700 text-3xl lg:text-4xl font-bold text-center mb-2 md:mb-2">Welcome!</h2>
-                    <h6 className="text-gray-800 text-md lg:text-md text-center mb-4 md:mb-8">Please Login</h6>
+                    <h6 className="text-gray-800 text-md lg:text-md text-center mb-4 md:mb-8">Register</h6>
 
                     <form className="max-w-lg border rounded-lg mx-auto">
                         <div className="flex flex-col gap-4 p-4 md:p-8">
@@ -29,17 +27,13 @@ function LoginCustomer() {
                         </div>
 
                         <div className="flex justify-center items-center bg-gray-100 p-4">
-                            <p className="text-gray-500 text-sm text-center">Don't have an account? <NavLink to="/register" className="text-green-700 hover:text-green-800 active:text-green-600 transition duration-100">Register!</NavLink></p>
+                           
                         </div>
                     </form>
                 </div>
-                <Routes>
-                    <Route path='/register' element={<RegisterCustomer />} />
-                </Routes>
-
             </div>
         </>
     )
 }
 
-export default LoginCustomer
+export default RegisterCustomer

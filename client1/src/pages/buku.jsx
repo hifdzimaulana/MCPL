@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import axios from "../config/axios";
 import { Link, NavLink } from "react-router-dom";
 import { Footer, Navbar } from "../components";
+import Catalog from "react-catalog-view";
+import '../components/buku.css'
 
 class Buku extends Component {
   constructor(props) {
@@ -24,33 +26,37 @@ class Buku extends Component {
     return (
       <>
         <Navbar />
-        <section>
-          <div className="bg-white py-2 sm:py-4 lg:py-8">
-            <div className="max-w-screen-xl px-4 md:px-8 mx-auto">
-              <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-                {this.state.buku.map((val) => (
-                  <div>
-                    <div
-                      className="w-56 h-80 bg-center bg-contain bg-no-repeat "
-                      style={{ backgroundImage: `url('${val.cover}')` }}
-                    />
-                    <h1>{val.judul}</h1>
-                    <p>Pengarang: {val.pengarang}</p>
-                    <p>Penerbit: {val.penerbit}</p>
-                    <p>Stok: {val.stok}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="container px-5 py-24 mx-auto">
-            <div className="max-w-7xl mx-auto">
-              <div className="flex flex-wrap -m-4 justify-center items-center md:justify-center md:items-center"></div>
-            </div>
-          </div>
-        </section>
+        <div class="wrapper bg-gray-400 antialiased text-gray-900">
+<div>
+    
+    {/* <img src="https://source.unsplash.com/random/350x350" alt=" random imgee" class="w-full object-cover object-center rounded-lg shadow-md">     */}
+    
+ <div class="relative px-4 -mt-16  ">
+   <div class="bg-white p-6 rounded-lg shadow-lg">
+    <div class="flex items-baseline">
+      <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+        New
+      </span>
+      <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+    2 baths  &bull; 3 rooms
+  </div>  
+    </div>
+    
+    <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">A random Title</h4>
+ 
+  <div class="mt-1">
+    $1800
+    <span class="text-gray-600 text-sm">   /wk</span>
+  </div>
+  <div class="mt-4">
+    <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+    <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+  </div>  
+  </div>
+ </div>
+  
+</div>
+  </div>
         <Footer />
       </>
     );

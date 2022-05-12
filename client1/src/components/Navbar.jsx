@@ -8,7 +8,7 @@ export default function Navbar() {
 
     const activeClass = 'text-gray-500 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out'
     const inactiveClass = 'text-gray-500 hover:text-white hover:bg-gray-600 transition duration-300 ease-in-out'
-    const inactiveClassMenu = 'text-gray-700 hover:bg-gray-100 hover:bg-gray-800 transition duration-300 ease-in-out'
+    const inactiveClassMenu = 'text-gray-700 hover:bg-gray-500 hover:bg-gray-800 transition duration-300 ease-in-out'
 
     const activeClasses = (path) => {
         return window.location.pathname === path ? activeClass : inactiveClass
